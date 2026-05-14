@@ -1,0 +1,24 @@
+# 默认届底：所有未覆盖的文件由 tech-leads 审核
+*                                    @AI-Hub-Growth/tech-leads
+
+# 设计师负责：主题/样式相关
+/frontend/src/theme/                 @AI-Hub-Growth/designers @AI-Hub-Growth/frontend
+/frontend/src/styles/                @AI-Hub-Growth/designers @AI-Hub-Growth/frontend
+/frontend/src/components/ui/         @AI-Hub-Growth/designers @AI-Hub-Growth/frontend
+
+# 产品负责：功能配置/文案
+/frontend/src/config/                @AI-Hub-Growth/products @AI-Hub-Growth/frontend
+
+# 前端负责：业务逻辑和 API 层
+/frontend/src/features/              @AI-Hub-Growth/frontend
+/frontend/src/api/                   @AI-Hub-Growth/frontend
+
+# 后端负责
+/backend/src/                        @AI-Hub-Growth/backend
+
+# 测试负责
+/tests/                              @AI-Hub-Growth/qa @AI-Hub-Growth/tech-leads
+
+# CI 和协作规则由 tech-leads 审核
+/.github/                            @AI-Hub-Growth/tech-leads
+/docs/collaboration.md               @AI-Hub-Growth/tech-leads

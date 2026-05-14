@@ -1,0 +1,43 @@
+# 用户 -> 角色映射
+# 替换为真实 GitHub 用户名
+users:
+  tanagofun-kipper:
+    role: designer
+  bob:
+    role: product
+  cindy:
+    role: qa
+  david:
+    role: frontend
+  eve:
+    role: backend
+  # tech-lead 不在这里定义 = 不受越界检查限制
+
+# 角色 -> 允许修改的路径
+# 支持 fnmatch 格式
+roles:
+  designer:
+    allowed_paths:
+      - "frontend/src/theme/**"
+      - "frontend/src/styles/**"
+      - "frontend/src/components/ui/**"
+
+  product:
+    allowed_paths:
+      - "frontend/src/config/**"
+      - "docs/requirements/**"
+
+  frontend:
+    allowed_paths:
+      - "frontend/src/**"
+
+  backend:
+    allowed_paths:
+      - "backend/src/**"
+      - "docs/api/**"
+
+  qa:
+    allowed_paths:
+      - "tests/**"
+      - "frontend/src/**/*.test.ts"
+      - "backend/src/**/*.test.ts"
